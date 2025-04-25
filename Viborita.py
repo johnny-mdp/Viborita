@@ -17,7 +17,7 @@ cell: int = screenpx // grid
 batch_num: int = 128
 epochs: int = 100
 run_max: int = 1000
-path_save: str = "best_model_bp.pth"
+path_save: str = "best_model.pth"
 
 
 #movements the snake can make
@@ -296,4 +296,4 @@ if __name__ == "__main__":
     if sv.lower() == 'y':
         torch.save(trained_model.state_dict(), path_save)
 
-    run_game(trained_model, True, 'snake_run.gif')
+    run_game(trained_model, True, 'snake_gameplay.gif')
